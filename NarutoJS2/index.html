@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naruto</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div id="container">
+    <div class="head_text"><p class="head_text_p">Naruto Shipudden</p></div>
+    <div class="episodes_section">
+        <p class="current_ep">Current Episode:</p>
+        <br>
+        <p id="print_episode">10</p>
+    </div>
+    <div class="video_div">
+        <video id="video_url" type="video/webm" src="https://cdn.asroll.tk/file/AS-Stream/AS+(1)/xsaNS/xsaNS+-+001-002.mp4" controls controlslist="nodownload" allowfullscreen></video>
+    </div>
+
+    <!--Commands buttons for video-->
+
+
+    <div class="commands">
+        <div class="full">
+            <button class="fullScreenVideo" type="submit" onclick="toggleFullScreen()">FULLSCREEN</button>
+        </div>
+        <div class="commands_header">
+            <p class="commands_p">Enter number of episode:</p>
+        </div>
+    </div>
+
+    <!--NAVBAR-->
+    <div class="navbar">
+        <hr>
+        <div class="navbar-div ">
+            <button class="link " onclick="lastOne()"><</button>
+        </div>
+        <div class="navbar-div_input ">
+            <input id="inputForEpisode" class="number_episode " type="number" required min="0" max="500">
+        </div>
+        <div class="navbar-div right_btn">
+            <button class="link " onclick="nextOne()">></button>
+        </div>
+        <hr>
+    </div>
+
+    <div class="findEpisodeScript">
+        <button type="submit" class="search_episode" onclick="findEpisode()">Find episode</button>
+    </div>
+
+
+</div>
+
+
+<script src="./main.js"></script>
+
+</body>
+</html>
